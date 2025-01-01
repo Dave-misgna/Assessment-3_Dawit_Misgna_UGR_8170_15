@@ -1,0 +1,38 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Interactive Calculator</title>  
+    <link rel="stylesheet" href="/src/css/style.css">  
+</head>  
+<body>  
+    <div id="calculator">  
+        <input type="text" value="0" id="display" disabled />  
+        <!-- input is disabled because we are using it as a display panel not as an entry point -->
+        <div id="buttons">  
+            <button class="btn" value="7" onclick="appendValues(value)">7</button>  
+            <button class="btn" value="8" onclick="appendValues(value)">8</button>  
+            <button class="btn" value="9" onclick="appendValues(value)">9</button>  
+            <button class="btn operator" value="/" onclick="appendValues(value)">/</button>  
+
+            <button class="btn" value="4" onclick="appendValues(value)">4</button>  
+            <button class="btn" value="5" onclick="appendValues(value)">5</button>  
+            <button class="btn" value="6" onclick="appendValues(value)">6</button>  
+            <button class="btn operator" value="*" onclick="appendValues(value)">*</button>  
+
+            <button class="btn" value="1" onclick="appendValues(value)">1</button>  
+            <button class="btn" value="2" onclick="appendValues(value)">2</button>  
+            <button class="btn" value="3" onclick="appendValues(value)">3</button>  
+            <button class="btn operator" value="-" onclick="appendValues(value)">-</button>  
+
+            <button class="btn" value="0" onclick="appendValues(value)">0</button>  
+            <button class="btn operator" value="+" onclick="appendValues(value)">+</button>  
+            <button class="btn operator equal" id="equals" onclick="calculation()">=</button>  
+            <button class="btn" id="clear" onclick="clearAll()">C</button>  
+        </div>  
+    </div>  
+    <script src="/src/js/script.js"></script>
+    <!-- <script src="./src/js/script.js"></script>   -->
+</body>  
+</html> 
